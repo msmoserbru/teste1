@@ -3,9 +3,9 @@ Feature('login')
 Scenario('loginRelatorioLocacao', ({ I }) => {
   I.amOnPage('/'),
     I.click('//*[@id="email"]'),
-    I.fillField('//input[@id="email"]', 'contato@personalaluga.com.br'),
+    I.fillField('//input[@id="email"]', 'email'),
     I.click('//*[@id="senha"]'),
-    I.fillField('//input[@id="senha"]', 'Pa#20160400'),
+    I.fillField('//input[@id="senha"]', 'senha'),
     I.seeElement('//form/div[3]/button'),
     I.click('//form/div[3]/button'),
     I.waitForElement('//*[@id="app"]//div/aside[1]/section//div[1]/a/img'),
@@ -25,9 +25,9 @@ Scenario('loginRelatorioLocacao', ({ I }) => {
 Scenario('loginFinanceiroExtrato', ({ I }) => {
   I.amOnPage('/'),
     I.click('//*[@id="email"]'),
-    I.fillField('//input[@id="email"]', 'contato@personalaluga.com.br'),
+    I.fillField('//input[@id="email"]', 'email'),
     I.click('//*[@id="senha"]'),
-    I.fillField('//input[@id="senha"]', 'Pa#20160400'),
+    I.fillField('//input[@id="senha"]', 'senha'),
     I.seeElement('//form/div[3]/button'),
     I.click('//form/div[3]/button'),
     I.waitForElement('//*[@id="app"]//div/aside[1]/section//div[1]/a/img'),
